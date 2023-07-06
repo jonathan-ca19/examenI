@@ -1,77 +1,81 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
-  /* Estilos para el header */
+/* Estilos para el header */
+.logo{
+  padding: 0;
+  margin: 0;
+  margin-left: 1%;
+  margin-top: -2% ;
+  width: 100px;
+  transition: 0.9s;
+}
+.logo:hover{
+  width: 110px;
+  transition: 0.9s;
+}
+.nav{
+  margin-top: -2%;
+  margin-left: -2%;
+  width: 1460px;
+  height: 120px;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold ;
+}
+h1{
+  color: white;
+  font-size: 45px;
+}
+ul li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+a{
+  color: rgb(78, 11, 11) !important;
+  text-decoration:none !important;
+  transition: 0.9s;
+}
+a:hover{
+  color: rgb(160, 11, 11) !important;
+  font-size: 20px;
+  transition: 0.9s;
+}
+@media (max-width: 767px) {
+  nav{
+    height: 70px;
+  }
   .logo{
-    padding: 0;
-    margin: 0;
-    margin-left: -5%;
-    margin-top: -2% ;
-    width: 100px;
-    transition: 0.9s;
+    margin-left:auto ;
+    margin-top: -5%;
+    width: 50px;
   }
   .logo:hover{
-    width: 110px;
-    transition: 0.9s;
+    width: 55px;
   }
-nav{
-    height: 120px;
-    background-color: rgb(24, 23, 23);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-weight: bold ;
-}
-  h1{
-    color: white;
-    font-size: 45px;
+  .l ,.c ,.q, .i{
+    font-size: 10px;
   }
-  ul li{
-    display: inline-block;
-    padding: 0px 20px;
+  .c{
+    margin-left: 100%;
   }
-  a{
-    color: rgb(78, 11, 11) !important;
-    text-decoration:none !important;
-    transition: 0.9s;
+  .l{
+    margin-left: 30%;
   }
-  a:hover{
-    color: rgb(160, 11, 11) !important;
-    font-size: 20px;
-    transition: 0.9s;
-  }
-  @media (max-width: 767px) {
-    nav{
-      height: 70px;
-    }
-    .logo{
-      margin-left:auto ;
-      margin-top: -5%;
-      width: 50px;
-    }
-    .logo:hover{
-      width: 55px;
-    }
-    .l ,.c ,.q, .i{
-      font-size: 10px;
-    }
-    .c{
-      margin-left: 100%;
-    }
-    .l{
-      margin-left: 30%;
-    }
 
-  }
+}
+
 
 
 

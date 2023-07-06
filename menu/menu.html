@@ -9,18 +9,31 @@
     <title>Menu</title>
 </head>
 <header>
-    <nav>
+  <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark" width="1430px">
+    <div class="bg-dark p-4">
+      <nav class="nav">
         <img class="logo" src="/img/logo.png" alt="">
         <ul>
-            <li><a class="i" href="/index/examen.html">INICIO</a></li>    
-            <li><a class="c" href="/contactos/contactos.html">CONTACTOS</a></li>
-            <li><a class="q" href="/q_somos/q_somos.html">QUIENES SOMOS</a></li>
-            <li><a class="l" href="/menu/menu.html">MENU</a></li>
+          <li><a class="i" href="/index/examen.html">INICIO</a></li>    
+          <li><a class="c" href="/contactos/contactos.html">CONTACTOS</a></li>
+          <li><a class="q" href="/q_somos/q_somos.html">QUIENES SOMOS</a></li>
         </ul>
-    </nav>
+        </div>
+        
+      </nav>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
 </header>
 
-
+<br>
+<h2 style="text-align: center; color: brown;">NUESTRO MENU</h2>
 
 
 <body>
@@ -32,7 +45,8 @@
         </button>
       </h2>
       <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Porcion de nuggets de pollo y papas salsa de tomate y mayonesa <p>Por 3.99</p></div>
+        <img src="https://www.consumer.es/app/uploads/2022/05/nuggets-pollo-tienen-pollo.jpg" alt="" width="30%" style="margin-left: 5%;">
+        <div class="accordion-body">Porcion de nuggets de pollo y papas salsa de tomate y mayonesa <p style="color: red;font-size: 20px;">Por 3.99</p></div>
       </div>
     </div>
     <div class="accordion-item">
@@ -42,6 +56,7 @@
         </button>
       </h2>
       <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+         <img src="https://marketing4ecommerce.net/wp-content/uploads/2016/12/shutterstock_259773713-compressor.jpg" alt="" width="30%" style="margin-left: 5%;">
         <div class="accordion-body">Hamburguesa con carne, pepinillos, queso cheddar, cebolla y lechuga <p style="color: red;font-size: 20px;">Por 4.99$</p></div>
       </div>
     </div>
@@ -52,10 +67,78 @@
         </button>
       </h2>
       <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        <div class="accordion-body">Porcion de papas <p style="color: red;font-size: 20px;">Por 2$</p><img src="https://img-global.cpcdn.com/recipes/bff348b1105d44b0/1200x630cq70/photo.jpg" alt="" width="20%"></div>
+        <div class="accordion-body">Porcion de Nuggets <p style="color: red;font-size: 20px;">Por 2.50$</p> <img src="https://thumbs.dreamstime.com/b/porci%C3%B3n-de-chili-cheese-nuggets-82684641.jpg" alt="" width="20%"></div>
+        <div class="accordion-body">Porcion de Ensalada <p style="color: red;font-size: 20px;">Por 1.50$</p><img src="https://www.redaccionmedica.com/images/destacados/una-ensalada-al-dia-ayuda-a-mantener-el-cerebro-11-anos-mas-joven-8056.jpg" alt="" width="20%"></div>
+
       </div>
     </div>
   </div>
+
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 40%;margin-bottom: 5%;">
+  Like
+</button>
+
+<!-- Modal -->
+<div class="modal fade mod1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Gracias por tu apoyo, pronto traeremos mas variedad
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 5%; margin-bottom: 5%;">
+  Compartir
+</button>
+<div class="modal fade mod1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Gracias por compartir nuestro trabajo
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Compartir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 style="text-align: center;">Te recomendamos nuestro producto mas vendido</h2>
+<center>
+  <div class="cont-ham">
+<div class="card12">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card1-1">
+          <img src="https://marketing4ecommerce.net/wp-content/uploads/2016/12/shutterstock_259773713-compressor.jpg" class="card-img-top" alt="Imagen 1">
+          <div class="card-body">
+            <h5 class="card-title">Combo Hamburguesa</h5>
+            <p class="card-text">Hamburguesa con carne, pepinillos, queso cheddar, cebolla y lechuga
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </center>
 </body>
 
 <footer>
